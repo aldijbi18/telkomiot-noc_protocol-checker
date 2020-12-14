@@ -1,29 +1,14 @@
 // Create by antares.id
 // edited by Fikri Nizar Gustiyana
-
-/*
-    This is an example sketch to publish MQTT data to your
-    Antares IoT Platform project device via ESP8266.
-
-    MQTT server & port:
-    platform.antares.id, port 1338
-
-    MQTT topic:
-    /oneM2M/req/your-access-key/antares-cse/json
-
-    This sketch will deploy data to your Antares device
-    and publish to the MQTT topic simultaneously.
-
-    For more information, please visit https://antares.id/id/docs.html
-*/
+// For more information, please visit https://antares.id/id/docs.html
 
 #include <AntaresESP8266MQTT.h>
 
-#define ACCESSKEY "070548070652eed2:a99733c6af38c165"
-#define WIFISSID "Tribe IoT"
-#define PASSWORD "telkom2020"
+#define ACCESSKEY "antares.id_accesskey"
+#define WIFISSID "WiFi_SSID"
+#define PASSWORD "WiFi_Password"
 
-#define projectName "Test-NOC"
+#define projectName "antares.id_projectname"
 #define deviceName "ESP8266-MQTT"
 int counter = 0;
 AntaresESP8266MQTT antares(ACCESSKEY);

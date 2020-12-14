@@ -1,14 +1,15 @@
 // Create by antares.id
 // edited by Fikri Nizar Gustiyana
+// For more information, please visit https://antares.id/id/docs.html
 
 #include <AntaresESP8266HTTP.h>
 
-#define ACCESSKEY "070548070652eed2:a99733c6af38c165"
-#define WIFISSID "Tribe IoT"
-#define PASSWORD "telkom2020"
+#define ACCESSKEY "antares.id_accesskey"
+#define WIFISSID "WiFi_SSID"
+#define PASSWORD "WiFi_Password"
 
-#define projectName "Test-NOC"
-#define deviceName "ESP826-HTTP"
+#define projectName "antares.id_projectname"
+#define deviceName "ESP8266-HTTP"
 int counter = 0;
 AntaresESP8266HTTP antares(ACCESSKEY);
 

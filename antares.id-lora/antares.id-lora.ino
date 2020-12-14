@@ -1,7 +1,10 @@
 // Create by antares.id
 // edited by Fikri Nizar Gustiyana
+// For more information, please visit https://antares.id/id/docs.html
 
 #include <loraid.h>
+#define ACCESSKEY "antares.id_accesskey"
+#define DEVICEID "antares.id_deviceid"
 
 long interval = 60000;    // 10 s interval to send message
 long previousMillis = 0;  // will store last time message sent
@@ -18,8 +21,8 @@ void setup() {
   lora.setDataRate(2);
   
   // Put Antares Key and DevAddress here
-  lora.setAccessKey("070548070652eed2:a99733c6af38c165");
-  lora.setDeviceId("e5dc08e0");
+  lora.setAccessKey(ACCESSKEY);
+  lora.setDeviceId(DEVICEID);
 }
 
 void loop() {
