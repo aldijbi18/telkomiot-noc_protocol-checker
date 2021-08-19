@@ -1,16 +1,19 @@
 // Create by antares.id
-// edited by Fikri Nizar Gustiyana
+// edited by Aldi Wijaya
 // For more information, please visit https://antares.id/id/docs.html
 
 #include <loraid.h>
 #define ACCESSKEY "antares.id_accesskey"
-#define DEVICEID "antares.id_deviceid"
+#define DEVICEID "antares.id_loradeviceaddress"
 
-long interval = 60000;    // 10 s interval to send message
+long interval = 60000;    // 60 s interval to send message
 long previousMillis = 0;  // will store last time message sent
 unsigned int counter = 0;     // message counter
 
 void setup() {
+  // Set Serial Monitor Baudrate
+  Serial.begin(9600);
+  
   // Setup loraid access
   lora.init();
 
@@ -41,6 +44,7 @@ void loop() {
 
     lora.sendToAntares((unsigned char *)myStr, strlen(myStr), 0);
     counter++;
+    Serial.println(myStr);
   }
 
   recvStatus = lora.readData(outStr);

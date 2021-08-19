@@ -1,5 +1,5 @@
 // Create by antares.id
-// edited by Fikri Nizar Gustiyana
+// edited by Aldi Wijaya
 // For more information, please visit https://antares.id/id/docs.html
 
 #include <AntaresESP8266MQTT.h>
@@ -8,8 +8,8 @@
 #define WIFISSID "WiFi_SSID"
 #define PASSWORD "WiFi_Password"
 
-#define projectName "antares.id_projectname"
-#define deviceName "ESP8266-MQTT"
+#define projectName "antares.id_applicationname"
+#define deviceName "antares.id_devicename"
 int counter = 0;
 AntaresESP8266MQTT antares(ACCESSKEY);
 
